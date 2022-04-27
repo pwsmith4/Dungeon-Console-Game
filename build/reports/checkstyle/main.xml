@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <checkstyle version="8.1">
-<file name="C:\Users\Transfer\Downloads\Simple-Dungeon-Crawler-Game-master\Simple-Dungeon-Crawler-Game-master\src\main\java\game\Actions.java">
+<file name="C:\Users\Transfer\Documents\GitHub\assignment5\src\main\java\game\Actions.java">
 </file>
-<file name="C:\Users\Transfer\Downloads\Simple-Dungeon-Crawler-Game-master\Simple-Dungeon-Crawler-Game-master\src\main\java\game\Boots.java">
+<file name="C:\Users\Transfer\Documents\GitHub\assignment5\src\main\java\game\Boots.java">
 </file>
-<file name="C:\Users\Transfer\Downloads\Simple-Dungeon-Crawler-Game-master\Simple-Dungeon-Crawler-Game-master\src\main\java\game\Character.java">
+<file name="C:\Users\Transfer\Documents\GitHub\assignment5\src\main\java\game\Character.java">
 </file>
-<file name="C:\Users\Transfer\Downloads\Simple-Dungeon-Crawler-Game-master\Simple-Dungeon-Crawler-Game-master\src\main\java\game\Characters.java">
+<file name="C:\Users\Transfer\Documents\GitHub\assignment5\src\main\java\game\Characters.java">
 </file>
-<file name="C:\Users\Transfer\Downloads\Simple-Dungeon-Crawler-Game-master\Simple-Dungeon-Crawler-Game-master\src\main\java\game\Equipment.java">
+<file name="C:\Users\Transfer\Documents\GitHub\assignment5\src\main\java\game\Equipment.java">
 </file>
-<file name="C:\Users\Transfer\Downloads\Simple-Dungeon-Crawler-Game-master\Simple-Dungeon-Crawler-Game-master\src\main\java\game\GameMethods.java">
+<file name="C:\Users\Transfer\Documents\GitHub\assignment5\src\main\java\game\GameMethods.java">
 </file>
-<file name="C:\Users\Transfer\Downloads\Simple-Dungeon-Crawler-Game-master\Simple-Dungeon-Crawler-Game-master\src\main\java\game\Helmet.java">
+<file name="C:\Users\Transfer\Documents\GitHub\assignment5\src\main\java\game\Helmet.java">
 </file>
-<file name="C:\Users\Transfer\Downloads\Simple-Dungeon-Crawler-Game-master\Simple-Dungeon-Crawler-Game-master\src\main\java\game\Monster.java">
+<file name="C:\Users\Transfer\Documents\GitHub\assignment5\src\main\java\game\Monster.java">
 </file>
-<file name="C:\Users\Transfer\Downloads\Simple-Dungeon-Crawler-Game-master\Simple-Dungeon-Crawler-Game-master\src\main\java\game\Monsters.java">
+<file name="C:\Users\Transfer\Documents\GitHub\assignment5\src\main\java\game\Monsters.java">
 </file>
-<file name="C:\Users\Transfer\Downloads\Simple-Dungeon-Crawler-Game-master\Simple-Dungeon-Crawler-Game-master\src\main\java\game\RunningRounds.java">
+<file name="C:\Users\Transfer\Documents\GitHub\assignment5\src\main\java\game\RunningRounds.java">
 </file>
-<file name="C:\Users\Transfer\Downloads\Simple-Dungeon-Crawler-Game-master\Simple-Dungeon-Crawler-Game-master\src\main\java\game\Sword.java">
+<file name="C:\Users\Transfer\Documents\GitHub\assignment5\src\main\java\game\Sword.java">
 </file>
-<file name="C:\Users\Transfer\Downloads\Simple-Dungeon-Crawler-Game-master\Simple-Dungeon-Crawler-Game-master\src\main\java\game\Utilities.java">
+<file name="C:\Users\Transfer\Documents\GitHub\assignment5\src\main\java\game\Utilities.java">
 </file>
 </checkstyle>

@@ -6,6 +6,9 @@ repositories {
     mavenCentral()
 }
 
+apply plugin: 'application'
+apply plugin: 'jacoco'
+
 // specify the use of gradle version 4.1
 task Wrapper(type: Wrapper) {
   gradleVersion = '4.1'
@@ -13,7 +16,7 @@ task Wrapper(type: Wrapper) {
 
 // specify the use of JUnit for testing
 dependencies {
-  testCompile 'junit:junit:4.9'
+  testCompile 'junit:junit:4.12'
 }
 
 // configure the tests to produce logging output
@@ -34,7 +37,6 @@ jar {
 }
 
 // give the name of the application to run with "gradle run" command
-apply plugin: 'application'
 mainClassName = 'game.RunningRounds'
 
 // perform checkstyle checking with the "gradle check" command
