@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="game.TestGame" tests="9" skipped="0" failures="0" errors="0" timestamp="2022-04-27T02:32:51" hostname="LAPTOP-TRANSFER" time="0.015">
+  <properties/>
+  <testcase name="testMonsterDealDamageMethod" classname="game.TestGame" time="0.008"/>
+  <testcase name="testCharacterAttackRoll" classname="game.TestGame" time="0.0"/>
+  <testcase name="testMonsterGetSpeedMethod" classname="game.TestGame" time="0.0"/>
+  <testcase name="testHpSetterCharacter" classname="game.TestGame" time="0.0"/>
+  <testcase name="testCharacterDealDamageMethod" classname="game.TestGame" time="0.005"/>
+  <testcase name="testCharacterGetSpeedMethod" classname="game.TestGame" time="0.0"/>
+  <testcase name="testMonsterAttackRoll" classname="game.TestGame" time="0.0"/>
+  <testcase name="testCharacterHealMethod" classname="game.TestGame" time="0.0"/>
+  <testcase name="testHpSetterMonster" classname="game.TestGame" time="0.0"/>
+  <system-out><![CDATA[
+Critical Strike using Guaranteed Crit Chance!
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,53 @@
+apply plugin: 'java'
+
+// declare the repositories that are used to meet dependencies
+repositories {
+  mavenLocal()
+    mavenCentral()
+}
+
+// specify the use of gradle version 4.1
+task Wrapper(type: Wrapper) {
+  gradleVersion = '4.1'
+}
+
+// specify the use of JUnit for testing
+dependencies {
+  testCompile 'junit:junit:4.9'
+}
+
+// configure the tests to produce logging output
+test {
+    testLogging {
+        events "passed", "skipped", "failed", "standardOut", "standardError"
+    }
+}
+
+// declare values to place in the manifest file in the JAR
+jar {
+  manifest {
+    attributes(
+        'Class-Path': configurations.compile.collect { it.getName() }.join(' '),
+        'Main-Class': 'game.RunningRounds'
+        )
+  }
+}
+
+// give the name of the application to run with "gradle run" command
+apply plugin: 'application'
+mainClassName = 'game.RunningRounds'
+
+// perform checkstyle checking with the "gradle check" command
+apply plugin: 'checkstyle'
+checkstyle.toolVersion = '8.1'
+checkstyle {
+  ignoreFailures = false
+    maxWarnings = 0
+    maxErrors = 0
+    configFile = new File(rootDir, "config/checkstyle/google_checks.xml")
+}
+
+// specify that the application will accept input from System.in
+run {
+   standardInput = System.in
+}
