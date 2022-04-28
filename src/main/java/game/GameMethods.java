@@ -1,7 +1,6 @@
 package game;
 
 import java.util.Random;
-import java.util.Scanner;
 
 /**
  * This class is used to store narrative material.
@@ -22,12 +21,11 @@ public class GameMethods {
    * Initial story and asks for team name.
    */
   public static void startGame() {
-    Scanner scan = new Scanner(System.in);
     System.out.println(WHITE + "Greetings, brave adventurer!"
         + "\nYou are about to embark on a quest to defeat the king."
         + "\nThis venture, however, is not for the faint of heart."
         + "\nIf you are brave enough to begin, please enter your name.\n");
-    String teamName = scan.nextLine();
+    String teamName = "Brave Knight";
     System.out.println("\nGood luck, " + teamName + "." + RESET);
   }
 
@@ -53,13 +51,13 @@ public class GameMethods {
         char1.setStrikeSkillCooldown(3);
         strikeSkillUpgrade = true;
       }
-      if (char1.getLevel() == 10) {
+      if (char1.getLevel() == 3) {
         char1.addStrikeSkill();
         char1.setStrikeSkillName("Double Strike");
         char1.setStrikeSkillCooldown(4);
         strikeSkillUpgrade = true;
       }
-      if (char1.getLevel() == 15) {
+      if (char1.getLevel() == 5) {
         char1.addStrikeSkill();
         char1.setStrikeSkillName("Triple Strike");
         char1.setStrikeSkillCooldown(5);
@@ -514,7 +512,6 @@ public class GameMethods {
               System.out.println(WHITE + monst1.getName() + "is defending!\n" + RESET);
               charTurn = true;
             } else if (aiChoice == 2) {
-              Actions.healTargetM(monst1, healing);
               System.out.println();
               System.out.println(WHITE + monst1.getName() + " healed for "
                   + healing + " points!\n" + RESET);

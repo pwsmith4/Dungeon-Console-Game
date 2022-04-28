@@ -14,30 +14,28 @@ public class RunningRounds {
    * @author Parker Smith
    *
    */
-  public static void main(String[] args) {
-    int eventNumber = 1;
+  private static int raceType = 0;
+  private static int classType = 0;
+  
+  /** Sets the kind of character. */
+  public static Character setCharacter(int raceT, int classT) {
 
     // Opens game and takes team name.
     GameMethods.startGame();
 
     // Character selection in three brackets of character professions.
-    Random rand = new Random();
-    Boolean classChosen = false;
     Boolean errorGiven = false;
     Characters players = new Characters();
     Character char1 = new Character(null, 0, 0, 0, 0, 0, 0);
-    int raceType = 0;
-    int classType = 0;
-    int floorsPassed = 0;
 
     System.out.println("What kind of Class do you want to play as?"
         + " \n1. Wizard\n2. Fighter\n3. Rogue");
     System.out.println("Wizard has a Drain Spell, Fighter has"
         + " a guaranteed crit hit, and Rogue has a backstab attack.\n");
-    Scanner scan = new Scanner(System.in);
-
+    classType = classT;
+    Boolean classChosen = false;
+      
     while (!classChosen) {
-      classType = scan.nextInt();
       if (classType == 1) {
         classChosen = true;
       } else if (classType == 2) {
@@ -60,7 +58,7 @@ public class RunningRounds {
     Boolean raceChosen = false;
 
     while (!raceChosen) {
-      raceType = scan.nextInt();
+      raceType = raceT;
       if (raceType == 1) {
         if (classType == 1) {
           char1 = players.characters1(raceType);
@@ -98,6 +96,18 @@ public class RunningRounds {
 
     char1.setStrikeSkillName("No Strike Skill Yet...");
     char1.setStrikeSkillCooldown(0);
+    return char1;
+  }
+  
+  /** Runs the beginning of the program. */
+  public static void main(String[] args) {
+    Random rand = new Random();
+    raceType = rand.nextInt(3) + 1;
+    classType = rand.nextInt(3) + 1;
+    Character char1 = setCharacter(raceType, classType);
+    int floorsPassed = 0;
+    int eventNumber = 1;
+
     boolean char1Alive = true;
     
     // Tells player their party and stats.
@@ -112,6 +122,10 @@ public class RunningRounds {
     Monsters monster = new Monsters();
 
     while (char1.getHp() != 0) {
+      if (floorLevel == 11) {
+        System.out.println("You Got to the top. Congrats!");
+        return;
+      }
       if (char1.getMaxHp() * .15 > char1.getHp()) {
         GameMethods.topFloor(char1);
         floorLevel = 1;

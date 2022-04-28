@@ -1,4 +1,7 @@
-apply plugin: 'java'
+plugins {
+	id "com.github.spotbugs" version "4.5.1"
+	id "checkstyle"
+}
 
 // declare the repositories that are used to meet dependencies
 repositories {
@@ -48,6 +51,18 @@ checkstyle {
     maxErrors = 0
     configFile = new File(rootDir, "config/checkstyle/google_checks.xml")
 }
+spotbugsMain {
+     reports {
+         xml.enabled = false
+         html.enabled = true
+     }
+ }
+ spotbugs {
+     toolVersion = '4.0.0-beta4'
+     ignoreFailures = true
+     showProgress = true
+     effort = 'max'
+ }
 
 // specify that the application will accept input from System.in
 run {

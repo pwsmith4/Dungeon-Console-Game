@@ -5,7 +5,7 @@ package game;
  * 
  * @author pwsmith4
  */
-public class Helmet {
+public class Helmet implements EquipmentType {
   private int hp;
   private String name;
   private int cost;

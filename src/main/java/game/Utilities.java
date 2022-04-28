@@ -25,20 +25,18 @@ public class Utilities {
    **/
   public static void enterPrompt() {
     System.out.println("<Press Enter to continue>");
-    Scanner prompt = new Scanner(System.in);
-    String throwAway = prompt.nextLine();
   }
 
   /**
    * Prompts a user to choose an action.
    **/
   public static int actionPrompt(String playerName) {
-    Scanner prompt = new Scanner(System.in);
+    Random rand = new Random();
     System.out.println();
     System.out.println(playerName + ", action?\n");
     System.out.println("1. Attack | 2. Defend | 3. Heal"
         + " | 4. Special Skill | 5. Items \n");
-    int choice = prompt.nextInt();
+    int choice = rand.nextInt(5) + 1;
     return choice;
   }
 
@@ -66,8 +64,8 @@ public class Utilities {
     }
 
     System.out.println("3. Back.");
-    Scanner prompt = new Scanner(System.in);
-    int choice = prompt.nextInt();
+    Random rand = new Random();
+    int choice = rand.nextInt(3) + 1;
     return choice;
   }
 
@@ -75,13 +73,13 @@ public class Utilities {
    * Prompts a user to choose an item.
    **/
   public static int itemPrompt(Character playerName) {
-    Scanner prompt = new Scanner(System.in);
+    Random rand = new Random();
     System.out.println();
     System.out.println(playerName.getName() + ", items:\n");
     System.out.println("1. Use Potion. Num Potions = (" + playerName.getPotions() + ")");
     System.out.println("2. Use Spell. Num spells = (" + playerName.getSpells() + ")");
     System.out.println("3. Back.");
-    int choice = prompt.nextInt();
+    int choice = rand.nextInt(3) + 1;
     return choice;
   }
 
@@ -119,7 +117,7 @@ public class Utilities {
         threeItems++;
         ifSword = true;
       }
-      if (random > 80 && random <= 80 && ifPotion == false) {
+      if (random > 80 && random <= 100 && ifPotion == false) {
         ifPotion = true;
         threeItems++;
       }
@@ -140,8 +138,6 @@ public class Utilities {
     String printItem1 = "";
     String printItem2 = "";
     String printItem3 = "";
-
-    Scanner prompt = new Scanner(System.in);
 
     /** Shop Options. */
     System.out.println(playerGold);
@@ -274,7 +270,7 @@ public class Utilities {
     Boolean exit = false;
 
     while (exit == false) {
-      choice = prompt.nextInt();
+      choice = rand.nextInt(4) + 1;
 
       //Choice for Boots
       if (choice == 1 && item1 == 1) {
@@ -642,7 +638,7 @@ public class Utilities {
    * @author pwsmith4
    *
    **/
-  public class ConsoleColors {
+  public static class ConsoleColors {
     // Reset
     public static final String RESET = "\033[0m";  // Text Reset
 

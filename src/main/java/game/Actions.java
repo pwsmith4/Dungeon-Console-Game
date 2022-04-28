@@ -93,16 +93,6 @@ public class Actions {
   }
 
   /**
-   * Heals the monster.
-   **/
-  public static void healTargetM(Monster monst, int healing) {
-    int targetHp = monst.getHp();
-    targetHp += healing;
-    monst.setHp(targetHp);
-  }
-
-
-  /**
    * Returns the attack value.
    */
   public static int attack(int attValue) {
