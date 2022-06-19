@@ -2,7 +2,7 @@ package game;
 
 import java.util.Random;
 
-/**
+/** 
  * This class is used to store narrative material.
  * 
  * @author pwsmith4
