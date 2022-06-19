@@ -2,7 +2,7 @@ package game;
 
 /**
  * A class that contains the character object.
- *
+ * 
  * @author pwsmith4
  */
 public class Character {
