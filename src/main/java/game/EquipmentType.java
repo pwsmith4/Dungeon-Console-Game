@@ -1,7 +1,7 @@
 package game;
 
 public interface EquipmentType {
-  
+   
   /** Returns Name. */
   public static String getName() {
     return null;
