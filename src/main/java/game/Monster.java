@@ -3,7 +3,7 @@ package game;
 /**
  * A class that contains the monster object.
  *
- * @author Parker Smith
+ * @author Parker Smith 
  */
 
 public class Monster {
