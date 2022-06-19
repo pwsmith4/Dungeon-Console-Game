@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 /**
  * A class that contains utility methods.
- * This is used to simplify methods and blocks of code.
+ * This is used to simplify methods and blocks of code. 
  * 
  * @author pwsmith4
  **/
