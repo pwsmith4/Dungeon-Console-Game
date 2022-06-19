@@ -3,7 +3,7 @@ package game;
 import java.util.Random;
 import java.util.Scanner;
 
-/**
+/** 
  * A class that contains action methods.
  *
  * @author pwsmith4
