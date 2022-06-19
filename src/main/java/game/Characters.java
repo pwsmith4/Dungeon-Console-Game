@@ -3,7 +3,7 @@ package game;
 /**
  * A class that holds new Character information.
  *
- * @author pwsmith4
+ * @author pwsmith4 
  */
 public class Characters {
 
