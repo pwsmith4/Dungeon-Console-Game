@@ -5,7 +5,7 @@ package game;
  * 
  * @author pwsmith4
  */
-public class Sword implements EquipmentType {
+public class Sword implements EquipmentType { 
 
   private int damage;
   private String name;
