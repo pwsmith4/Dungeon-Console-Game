@@ -1,6 +1,6 @@
 package game;
 
-import java.util.Random;
+import java.util.Random; 
 
 /**
  * A class that holds new Monster Information.
