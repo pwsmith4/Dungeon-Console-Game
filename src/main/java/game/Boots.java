@@ -4,7 +4,7 @@ package game;
  * Class that holds Boots information.
  * 
  * @author pwsmith4
- */
+ */ 
 public class Boots implements EquipmentType {
   private int speed;
   private String name;
