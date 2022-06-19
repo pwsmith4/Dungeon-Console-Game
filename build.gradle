@@ -8,7 +8,7 @@ repositories {
   mavenLocal()
     mavenCentral()
 }
-
+ 
 apply plugin: 'application'
 apply plugin: 'jacoco'
 
