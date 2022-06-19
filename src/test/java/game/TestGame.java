@@ -4,7 +4,7 @@ import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
-import game.Actions;
+import game.Actions; 
 import game.Character;
 import game.Monster;
 import game.RunningRounds;
