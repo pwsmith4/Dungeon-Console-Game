@@ -4,7 +4,7 @@ package game;
  * Class that holds Helmet information.
  * 
  * @author pwsmith4
- */
+ */ 
 public class Helmet implements EquipmentType {
   private int hp;
   private String name;
