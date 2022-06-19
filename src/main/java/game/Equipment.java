@@ -5,7 +5,7 @@ import java.util.Random;
 /** Class that picks a random equipment. 
  * 
  * @author pwsmith4
- **/
+ **/ 
 
 public class Equipment {
   Helmet helm = new Helmet();
